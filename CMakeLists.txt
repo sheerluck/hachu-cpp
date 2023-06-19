@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(mkv)
+project(hachu)
 
 set(CMAKE_CXX_STANDARD 23)
 
@@ -18,6 +18,7 @@ add_executable(hachu hachu.cpp hachu.h
         eval.cpp     eval.h
         move.cpp     move.h
         piece.cpp    piece.h
-        variant.cpp  variant.h)
+        variant.cpp  variant.h
+        types.h)
 
-target_link_libraries(mkv fmt::fmt)
+target_link_libraries(hachu fmt::fmt)
